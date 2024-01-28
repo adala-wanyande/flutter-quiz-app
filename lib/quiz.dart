@@ -1,6 +1,7 @@
-import 'package:quiz_app/questions_screen.dart';
 import 'package:flutter/material.dart';
+
 import 'package:quiz_app/start_screen.dart';
+import 'package:quiz_app/questions_screen.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/results_screen.dart';
 
@@ -33,6 +34,13 @@ class _QuizState extends State<Quiz> {
     }
   }
 
+  void restartQuiz() {
+    setState(() {
+      selectedAnswers = [];
+      activeScreen = 'questions-screen';
+    });
+  }
+
   @override
   Widget build(context) {
     Widget screenWidget = StartScreen(switchScreen);
@@ -46,6 +54,7 @@ class _QuizState extends State<Quiz> {
     if (activeScreen == 'results-screen') {
       screenWidget = ResultsScreen(
         chosenAnswers: selectedAnswers,
+        onRestart: restartQuiz,
       );
     }
 
@@ -53,14 +62,15 @@ class _QuizState extends State<Quiz> {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 78, 13, 151),
-              Color.fromARGB(255, 107, 15, 168),
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          )),
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 78, 13, 151),
+                Color.fromARGB(255, 107, 15, 168),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
           child: screenWidget,
         ),
       ),
