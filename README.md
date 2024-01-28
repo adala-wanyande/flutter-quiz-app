@@ -1,16 +1,21 @@
-# quiz_app
+# Flutter Quiz App
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+This app is designed to provide an interactive and enjoyable way for users to test their knowledge on Flutter but can be used to quiz on anything ideally. It features a clean UI, multiple question types, and a scoring system.
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+![Mockups](assets/images/mockups.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Credit to my boy [Hakeem Alavi](https://github.com/HakeemAlavi) who showed me how to use [shots.so](https://shots.so/) for high quality project images and mockups. The guy is too clutch!
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+- One can adjust the data in the app and quiz on virtually any topic.
+- The app features an automatic scoring system for the answers once a quiz is completed.
+- The project explores core Flutter concepts such as widgets, state management and styling using Material UI.
+
+## Acknowledgements
+
+This project was inspired by the course ["Learn Flutter & Dart to Build iOS & Android Apps"](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/) by Academind by Maximilian Schwarzmüller. The course was instrumental in providing a solid foundation in Flutter app development.
