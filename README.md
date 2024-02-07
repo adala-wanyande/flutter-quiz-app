@@ -4,6 +4,10 @@
 
 This app is designed to provide an interactive and enjoyable way for users to test their knowledge on Flutter but can be used to quiz on anything ideally. It features a clean UI, multiple question types, and a scoring system.
 
+## Demo
+
+Open the deployed demo [here](https://flutter-quiz-app-adala.netlify.app/) on mobile for the best experience.
+
 ## Screenshots
 
 ![Mockups](assets/images/mockups.png)
